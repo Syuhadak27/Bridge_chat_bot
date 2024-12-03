@@ -8,7 +8,7 @@ def handle_start(bot):
         keyboard = InlineKeyboardMarkup()
         keyboard.add(
             InlineKeyboardButton("Owner", url=f"https://t.me/{os.getenv('OWNER_USERNAME', '@N/A')}"),
-            InlineKeyboardButton("Source Code", url="https://github.com/username/repository")
+            InlineKeyboardButton("Source Code", url="https://github.com/Syuhadak27/Bridge_chat_bot")
         )
         
         # Kirim pesan dengan tombol

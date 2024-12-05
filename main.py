@@ -5,6 +5,7 @@ from start import handle_start  # Import fungsi dari file start.py
 from forward import forward_to_admin  # Import fungsi dari file forward.py
 from telebot.types import Message
 from ping import ping  # Import fungsi ping dari ping.py
+from id import send_user_id # Import fungsi dari file id.py
 
 # Load variabel dari file .env
 load_dotenv("config.env")
@@ -23,12 +24,16 @@ bot = telebot.TeleBot(BOT_TOKEN, parse_mode='HTML')  # Aktifkan parse mode HTML
 @bot.message_handler(commands=['ping', 'p'])
 def handle_ping(message: Message):
     ping(bot, message)
-
+# Handler untuk command /id
+@bot.message_handler(commands=['id'])
+def handle_id_command(message):
+    send_user_id(bot, message)
+    
 # Panggil handler /start dari start.py
 handle_start(bot)
 
 # Fungsi untuk meneruskan pesan dari pengguna ke admin
-@bot.message_handler(func=lambda message: True, content_types=['text', 'photo', 'video', 'document', 'voice', 'sticker'])
+@bot.message_handler(func=lambda message: True, content_types=['text', 'photo', 'video', 'document', 'voice', 'sticker', 'audio', 'animation', 'video_note', 'contact', 'location', 'venue'])
 def forward_to_admin_handler(message: Message):
     forward_to_admin(bot, message, ADMIN_ID)
 

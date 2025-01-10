@@ -21,3 +21,10 @@ pip install -r requirements.txt
 ```shell
 python main.py
 ```
+
+## Bot Command
+```shell
+start - memulau bot
+ping - /p test ping bot
+id - mengecek id mu
+```

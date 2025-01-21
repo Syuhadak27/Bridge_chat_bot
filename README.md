@@ -1,6 +1,6 @@
 ## Clone repo ini
 ```shell
-git clone https://github.com/Syuhadak27/bridge_chat_bot.git && mv Bridge_chat_bot bridge && cd bridge
+git clone https://github.com/Syuhadak27/bridge_chat_bot.git && mv bridge_chat_bot bridge && cd bridge
 ```
 
 ## Cara menjalankan di vps dg docker

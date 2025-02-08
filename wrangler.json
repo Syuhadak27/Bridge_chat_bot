@@ -1,0 +1,15 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "bot-forward",
+  "main": "src/index.js",
+  "compatibility_date": "2025-01-29",
+  "observability": {
+    "enabled": true
+  },
+  "kv_namespaces": [
+    {
+      "binding": "nfd",
+      "id": "a2eb009fedaa425a93a5ae44d9f6746f"
+    }
+  ]
+}

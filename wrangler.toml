@@ -1,0 +1,8 @@
+name = "bot-forward"
+main = "index.js"
+compatibility_date = "2024-02-01"
+
+[[kv_namespaces]]
+binding = "nfd"
+id = "a2eb009fedaa425a93a5ae44d9f6746f"
+preview_id = "a2eb009fedaa425a93a5ae44d9f6746f"
